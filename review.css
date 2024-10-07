@@ -1,0 +1,35 @@
+body {
+    background-color:white;
+    background-size: cover;
+    font-family: Arial, sans-serif;
+    color: #414141;
+}
+
+.container {
+    max-width: 700px;
+    margin: 50px auto;
+    padding: 20px;
+    background-color:white;
+    border-radius: 10px;
+    border-color:grey;
+}
+
+input[type="text"],
+input[type="number"],
+textarea {
+    width: 97%;
+    padding: 10px;
+    margin-bottom: 10px;
+}
+
+button {
+    padding: 10px 20px;
+    background-color: #414141;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #77b731;
+}

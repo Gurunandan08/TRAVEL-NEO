@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Travel Review System</title>
+    <link rel="stylesheet" href="review.css">
+</head>
+<body>
+    <div class="container">
+        <h1><center>"Write us a <span style="color:#77b731">review</span> about your recent travel with us"</center></h1>
+        <div id="reviews-container"></div>
+        <form id="reviews-container" action="add_review.php" method="post">
+            <input type="text" id="name" placeholder="Your Name" required name="name">
+            <input type="text" id="place" placeholder="The place you visited" required name="place">
+            <textarea id="review" placeholder="Write your review" required name="review"></textarea>
+            <input type="number" id="rating" placeholder="Rating (1-5)" min="1" max="5" required name="rating">
+            <center><button type="submit">Submit Review</button></center>
+        </form>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>User - Login and Register</title>
+  <link rel="stylesheet" href="login.css">
+</head>
+<body>
+
+  <header>
+    <h2>TRAVELNEO</h2>
+    
+    <div class='sign-in-up'>
+      <button type='button' onclick="popup('login-popup')">LOGIN</button>
+    </div>
+  </header>
+
+  <div class="popup-container" id="login-popup">
+    <div class="popup">
+      <form method="POST" action="login_register.php">
+        <h2>
+          <span>USER LOGIN</span>
+          <button type="reset" onclick="popup('login-popup')">X</button>
+        </h2>
+        <input type="text" id="email" placeholder="E-mail" name="email">
+        <input type="password" placeholder="Password" name="password">
+        <button type="submit" class="login-btn" name="login">LOGIN</button>
+      </form>
+    </div>
+  </div>
+
+  <script>
+    function popup(popup_name)
+    {
+      get_popup=document.getElementById(popup_name);
+      if(get_popup.style.display=="flex")
+      {
+        get_popup.style.display="none";
+      }
+      else
+      {
+        get_popup.style.display="flex";
+      }
+    }
+  </script>
+
+</body>
+</html>

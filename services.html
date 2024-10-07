@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Services</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="service-wrapper">
+            <div class="service">
+                <h1>Services</h1>
+                <h3> Planner is a website that helps users plan their trips with ease and convenience. Users can search for destinations, compare prices, book prices , hotels, and activities, and create personalized itineraries. Travel Planner also provides useful information such as weather ,currency, visa requirements, and travel tips for each destination.</h3>
+            </div>
+        </div>
+            <center>
+                <div class="inner-nav">
+                    <ul class="inner-nav-list">
+                        <li>
+                            <a onclick="packages()">PACKAGES</a>
+                        </li>
+                        <li>
+                            <a onclick="review()">REVIEW</a>
+                        </li>
+                        <li>
+                            <a onclick="itineraries()">ITINERARIES</a>
+                        </li>
+                        <li>
+                            <a onclick="hotel()">HOTELS</a>
+                        </li>
+                    </ul>
+                </div>
+                    <div class="cards">
+                        <div class="card" id="packages" style="display: none;">
+                            <i class="fa-solid fa-box-open"></i>
+                            <h2>PACKAGES</h2>
+                            <br>
+                            <P class="hero"> Explore ancient ruins and vibrant markets on our cultural tour package. Immerse yourself in the beauty of nature with guided hikes and serene landscapes.</P>
+                        </div>
+                        <div class="card" id="review" style="display: none;">
+                            <i class="fa-solid fa-star-sharp"></i>
+                            <h2>REVIEW</h2>
+                            <br>
+                            <P>Discover firsthand experiences and insightful feedback from fellow travelers on our planning website. Let their reviews guide your next adventure with confidence and excitement.</P>
+                        </div>
+                        <div class="card" id="itineraries" style="display: none;">
+                            <i class="fa-solid fa-book"></i>
+                            <h2>ITINERARIES</h2>
+                            <br>
+
+                            <P>Embark on a journey filled with adventure and discovery with our meticulously curated trip itinerary. From iconic landmarks to hidden gems, every day is an opportunity to create lasting memories and unforgettable experiences.</P>
+                        </div>
+                        <div class="card" id="hotel" style="display: none;">
+                            <i class="fa-solid fa-hotel"></i>
+                            <h2>HOTEL/RESTAURANT</h2>
+                            <P>Indulge in luxury and comfort at our handpicked hotels, offering unparalleled hospitality and breathtaking views. Savor exquisite flavors and culinary delights at our recommended restaurants, where every meal is a culinary masterpiece crafted to perfection.</P>
+                        </div>
+                    </center>
+                    </div>
+    <script>
+        function packages(){
+            document.getElementById("packages").style.display = "block";
+            document.getElementById("review").style.display = "none";
+            document.getElementById("itineraries").style.display = "none";
+            document.getElementById("hotel").style.display = "none";
+        }
+        function review(){
+            document.getElementById("packages").style.display = "none";
+            document.getElementById("review").style.display = "block";
+            document.getElementById("itineraries").style.display = "none";
+            document.getElementById("hotel").style.display = "none";
+        }
+        function itineraries(){
+            document.getElementById("packages").style.display = "none";
+            document.getElementById("review").style.display = "none";
+            document.getElementById("itineraries").style.display = "block";
+            document.getElementById("hotel").style.display = "none";
+        }
+        function hotel(){
+            document.getElementById("packages").style.display = "none";
+            document.getElementById("review").style.display = "none";
+            document.getElementById("itineraries").style.display = "none";
+            document.getElementById("hotel").style.display = "block";
+        }
+    </script>
+</body>
+<div>
+    <h4>"Unlock the world's wonders with our travel planning platform. Your gateway to seamless adventures and unforgettable experiences awaits. Bon voyage!"</h4>
+    <h4> "Explore, plan, and wander with ease through our comprehensive travel planning platform. Let your journey begin here, where every destination is a discovery and every experience is extraordinary."</h4>
+</div>
+</html>

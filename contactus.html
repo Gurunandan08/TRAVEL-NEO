@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Contact Us</title>
+<style type="text/css">
+    body{
+        background-image:linear-gradient(to right,lightgrey,white,lightgrey);
+            text-align: center;
+            font-family: poppins;
+            font-size:larger;
+     }
+         
+    .container {
+        position: absolute;
+        top:50%;
+        left:50%;
+        transform: translateX(-50%) translateY(-50%);
+        display: block;
+        background-color:black;
+        color:white;
+        padding: 40px;
+        opacity: 80%;
+        border-radius: 14px;
+        border:1px solid grey;
+    }
+    label, input {
+        margin: 5px 0;
+        background-color:white;
+        height: 30px;
+	    width: 200px;
+        margin-right: 3px;
+        margin-top: 3px;
+        margin-inline-start: 20%;
+        border-radius: 8px;
+    }
+    input[type="submit"] 
+    {
+    margin: 15px 0 20px 0;
+	height: 45px;
+	width: 390px;
+	font-size: 20px;
+	color: whitesmoke;
+	outline: none;
+	cursor: pointer;
+	font-weight: bold;
+	background:green;
+	border : 1px solid #114819;
+    text-align:center;
+    scrollbar-color: #77b731 white;
+    }
+</style>
+</head>
+<body>
+
+<h2><b>CONTACT <span style="color:#77b731">US</span></b></h2>
+<div class="container">
+    <form id="Contact Us" action="register.php" method="post">
+        <table>
+            <tr>
+             <label><tr><td><b>Enter Name:</b></td><td><input type="text" id="username" name="username" required></td></tr></label>
+             <label><tr><td><b>Enter Phoneno:</b></td><td><input type="text" id="phoneno" name="phoneno" required></td></tr></label>
+             <label><tr><td><b>Enter Email:</b></td><td><input type="text" id="email" name="email" required></td></tr></label>
+            <label><tr><td><b>Enter Review:</b></td><td><input type="text" id="review" name="review" required></td></tr></label>
+        </table>
+      <input type="submit" value="Submit">
+    </form>
+</div>
+</body>
+</html>
